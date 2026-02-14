@@ -51,7 +51,7 @@ You can toggle between two primary parameter scales depending on your hardware a
 
 ## 📦 Installation & Setup
 
-### 1. Dependencies
+### 1. Dependencies (CPU)
 
 Create a `requirements.txt` and install:
 
@@ -62,6 +62,19 @@ numpy
 huggingface_hub
 qwen_tts
 
+```
+
+### Dependencies (GPU)
+```text
+torch>=2.0.0
+accelerate>=1.12.0
+flash-attn --no-build-isolation
+gradio
+numpy
+librosa
+soundfile
+huggingface_hub
+qwen_tts
 ```
 
 ```bash
