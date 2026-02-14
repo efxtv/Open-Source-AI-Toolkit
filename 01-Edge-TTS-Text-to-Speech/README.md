@@ -58,7 +58,7 @@ Extensive global coverage including but not limited to:
 1. **Clone and Enter Directory**:
 ```bash
 git clone <repo-link>
-cd Edge-TTS-Text-to-Speech
+cd Open-Source-AI-Toolkit/01-Edge-TTS-Text-to-Speech
 ```
 
 
