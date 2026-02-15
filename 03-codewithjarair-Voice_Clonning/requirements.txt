@@ -1,0 +1,7 @@
+gradio>=4.0.0
+torch>=2.1.0
+torchaudio
+spacy-pkuseg
+numpy
+scipy
+librosa
