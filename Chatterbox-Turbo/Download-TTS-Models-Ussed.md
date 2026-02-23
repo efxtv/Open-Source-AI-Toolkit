@@ -1,14 +1,16 @@
-## Navigate to your models directory
-cd ~/chatterturbo/models/
+# Chatter box 21GB
+# Slim version do not contain voice models 6GB only
 
-## 1. Chatterbox-Turbo (350M) - Official Resemble AI Weights
-wget https://huggingface.co/ResembleAI/chatterbox-turbo/resolve/main/t3_turbo_v1.safetensors -O chatterbox-turbo.safetensors
+# 1. Create a clean local directory
+cd /app/
+mkdir -p models/chatterbox
+mkdir -p models/chatterbox-turbo
 
-## 2. Chatterbox-Multilingual (500M) - Official Resemble AI Weights
-wget https://huggingface.co/ResembleAI/chatterbox/resolve/main/t3_mtl23ls_v2.safetensors -O chatterbox-multilingual.safetensors
+# 2. Use the huggingface-cli to download the REAL files (no symlinks)
+# Download the Standard/Multilingual weights
+huggingface-cli download ResembleAI/chatterbox --local-dir ./models/chatterbox --local-dir-use-symlinks False
+# Download the Turbo weights
+huggingface-cli download ResembleAI/chatterbox-turbo --local-dir ./models/chatterbox-turbo --local-dir-use-symlinks False
 
-## 3. S3Gen Decoder (REQUIRED for both models to produce audio)
-wget https://huggingface.co/ResembleAI/chatterbox-turbo/resolve/main/s3gen.safetensors -O s3gen.safetensors
-
-## 4. Voice Encoder (REQUIRED for Zero-Shot Cloning)
-wget https://huggingface.co/ResembleAI/chatterbox/resolve/main/ve.safetensors -O ve.safetensors
+# Check the files and size
+du -sh ./models/*
