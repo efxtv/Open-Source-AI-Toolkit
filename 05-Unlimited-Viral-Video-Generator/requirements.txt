@@ -1,0 +1,5 @@
+openai-whisper
+gradio
+yt-dlp
+ffmpeg-python
+setuptools
