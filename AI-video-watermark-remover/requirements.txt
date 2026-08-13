@@ -1,0 +1,7 @@
+gradio==6.24.0
+simple-lama-inpainting==0.1.2
+numpy<2.0
+opencv-python
+Pillow<10.0
+torch
+torchvision
