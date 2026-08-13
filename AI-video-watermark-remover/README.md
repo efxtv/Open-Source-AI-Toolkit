@@ -1,5 +1,7 @@
 # AI Video Watermark Remover
 
+## Need more Premium AI tools ? [GitHub](https://github.com/efxtv/Open-Source-AI-Toolkit/tree/main) [Telegram](https://t.me/efxtv)
+
 AI-powered MP4 video watermark remover with **content-aware inpainting**, **LaMa AI**, **smart watermark selection**, and **Frame 1 based mask detection**.
 
 Remove text watermarks, logos, channel branding, and other unwanted overlays from videos using a simple Gradio web interface.
@@ -609,3 +611,6 @@ content aware inpainting
 If this project is useful to you, consider giving it a ⭐ on GitHub.
 
 Contributions and improvements are welcome.
+---
+---
+*<a href="https://buymeacoffee.com/efxtv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>*
